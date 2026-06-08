@@ -1,0 +1,6 @@
+{
+  "name": "FROM - Cinematic Experience",
+  "description": "An interactive cinematic horror experience inspired by the TV show FROM. Features real-time responsive video scrubbing and a procedural inverse kinematics spider following the cursor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
