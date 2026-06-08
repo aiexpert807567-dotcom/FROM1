@@ -728,6 +728,31 @@ export default function App() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap');
 
+        @font-face {
+          font-family: 'Murder DB';
+          src: url('/murder_db.ttf') format('truetype'),
+               url('./murder_db.ttf') format('truetype'),
+               url('murder_db.ttf') format('truetype'),
+               url('/MurderDB.ttf') format('truetype'),
+               url('./MurderDB.ttf') format('truetype'),
+               url('MurderDB.ttf') format('truetype'),
+               url('/murder-db.ttf') format('truetype'),
+               url('./murder-db.ttf') format('truetype'),
+               url('murder-db.ttf') format('truetype'),
+               url('/murder_db.woff2') format('woff2'),
+               url('./murder_db.woff2') format('woff2'),
+               url('murder_db.woff2') format('woff2'),
+               url('/MurderDB.woff2') format('woff2'),
+               url('./MurderDB.woff2') format('woff2'),
+               url('MurderDB.woff2') format('woff2'),
+               url('/murder-db.woff2') format('woff2'),
+               url('./murder-db.woff2') format('woff2'),
+               url('murder-db.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+        }
+
         * { margin:0; padding:0; box-sizing:border-box; cursor: none !important; }
         :root {
           --text-main: #c8d8e8;
@@ -778,7 +803,7 @@ export default function App() {
         #hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
         #hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
         #watch-btn {
-          font-family: 'Cinzel', serif;
+          font-family: 'Murder DB', 'Cinzel', serif;
           font-size:11.55px; letter-spacing:4px; text-transform:uppercase;
           color:var(--text-main); background:none; border:none; outline:none;
           cursor:none; padding:8px 0; transition:color 0.3s;
@@ -793,9 +818,9 @@ export default function App() {
           transition:transform 0.42s cubic-bezier(0.16,1,0.3,1);
         }
         #nav-menu.open { transform:translateX(0); }
-        #nav-logo { font-family: 'Cinzel', serif; font-size:29.4px; color:var(--text-bright); letter-spacing:4px; margin-bottom:40px; }
+        #nav-logo { font-family: 'Murder DB', 'Cinzel', serif; font-size:29.4px; color:var(--text-bright); letter-spacing:4px; margin-bottom:40px; }
         #nav-menu a {
-          display:block; font-family: 'Cinzel', serif;
+          display:block; font-family: 'Murder DB', 'Cinzel', serif;
           font-size:11.55px; letter-spacing:4px; text-transform:uppercase;
           color:var(--text-dim); text-decoration:none;
           padding:13px 0; border-bottom:1px solid rgba(100,140,180,0.1);
@@ -807,7 +832,7 @@ export default function App() {
           width:40%; padding:0 60px; will-change:transform;
         }
         #title-main {
-          font-family: 'Cinzel', serif;
+          font-family: 'Murder DB', 'Cinzel', serif;
           font-size:clamp(84px,11.55vw,155.4px); line-height:0.86;
           color:var(--text-bright); letter-spacing:6px;
           text-shadow:0 6px 50px rgba(0,0,0,0.9);
@@ -821,7 +846,7 @@ export default function App() {
         }
         #btn-group { display:flex; flex-direction:column; gap:13px; width:fit-content; }
         .hero-btn {
-          font-family: 'Cinzel', serif;
+          font-family: 'Murder DB', 'Cinzel', serif;
           font-size:11.55px; letter-spacing:4px; text-transform:uppercase;
           padding:14px 36px; cursor:none; border:none; outline:none; transition:all 0.3s;
         }
@@ -842,22 +867,22 @@ export default function App() {
         }
         #modal-close {
           position:absolute; top:22px; right:26px;
-          font-family: 'Cinzel', serif; font-size:10.5px; letter-spacing:3px; text-transform:uppercase;
+          font-family: 'Murder DB', 'Cinzel', serif; font-size:10.5px; letter-spacing:3px; text-transform:uppercase;
           color:var(--text-dim); cursor:none; background:none; border:none; transition:color 0.3s; outline:none;
         }
         #modal-close:hover { color:var(--text-bright); }
-        #modal h2 { font-family: 'Cinzel', serif; font-size:56.7px; color:var(--text-bright); margin-bottom:6px; letter-spacing:4px; }
+        #modal h2 { font-family: 'Murder DB', 'Cinzel', serif; font-size:56.7px; color:var(--text-bright); margin-bottom:6px; letter-spacing:4px; }
         .modal-sub { font-family:'Crimson Pro',serif; font-style:italic; font-size:14.7px; color:var(--text-dim); margin-bottom:36px; padding-bottom:24px; border-bottom:1px solid rgba(100,140,180,0.18); }
         .modal-section { margin-bottom:32px; }
-        .modal-section h3 { font-family: 'Cinzel', serif; font-size:10.5px; letter-spacing:4px; text-transform:uppercase; color:var(--text-dim); margin-bottom:14px; }
+        .modal-section h3 { font-family: 'Murder DB', 'Cinzel', serif; font-size:10.5px; letter-spacing:4px; text-transform:uppercase; color:var(--text-dim); margin-bottom:14px; }
         .cast-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:12px; }
         .cast-card { border:1px solid rgba(100,140,180,0.18); padding:14px; background:rgba(255,255,255,0.02); }
         .cast-card .name { font-family:'Crimson Pro',serif; font-size:14.7px; color:var(--text-main); margin-bottom:4px; }
         .cast-card .role { font-family:'Crimson Pro',serif; font-size:12.6px; font-style:italic; color:var(--text-dim); }
         .row { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid rgba(100,140,180,0.08); font-family:'Crimson Pro',serif; font-size:14.7px; color:var(--text-main); }
-        .badge { font-family: 'Cinzel', serif; font-size:9.45px; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); border:1px solid rgba(100,140,180,0.18); padding:3px 10px; }
+        .badge { font-family: 'Murder DB', 'Cinzel', serif; font-size:9.45px; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); border:1px solid rgba(100,140,180,0.18); padding:3px 10px; }
         .tl { display:flex; gap:20px; padding:10px 0; border-bottom:1px solid rgba(100,140,180,0.06); }
-        .tl-date { font-family: 'Cinzel', serif; font-size:10.5px; letter-spacing:2px; color:var(--text-dim); min-width:80px; padding-top:2px; }
+        .tl-date { font-family: 'Murder DB', 'Cinzel', serif; font-size:10.5px; letter-spacing:2px; color:var(--text-dim); min-width:80px; padding-top:2px; }
         .tl-event { font-family:'Crimson Pro',serif; font-size:14.7px; color:var(--text-main); }
         #modal::-webkit-scrollbar { width:3px; }
         #modal::-webkit-scrollbar-track { background:transparent; }
@@ -870,7 +895,7 @@ export default function App() {
 
         #vid-status {
           position:fixed; bottom:18px; right:18px;
-          font-family:'Cinzel',serif; font-size:9.45px; letter-spacing:2px; text-transform:uppercase;
+          font-family:'Murder DB','Cinzel',serif; font-size:9.45px; letter-spacing:2px; text-transform:uppercase;
           color:var(--text-dim); padding:4px 10px; background:rgba(6,8,16,0.7); z-index:50; transition:opacity 1.5s;
         }
 
@@ -884,7 +909,7 @@ export default function App() {
         }
         .trailer-close {
           position:absolute; top:-36px; right:0;
-          font-family:'Cinzel',serif; font-size:11.55px; letter-spacing:3px;
+          font-family:'Murder DB','Cinzel',serif; font-size:11.55px; letter-spacing:3px;
           color:var(--text-main); background:none; border:none; cursor:none;
         }
 
